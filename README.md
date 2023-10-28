@@ -1,1 +1,1 @@
-# castro-static
+Untuk Program Ada di branch Master
