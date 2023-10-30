@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: ["./src/**/*.{html,js}" ,  "./node_modules/flowbite/**/*.js"],
   theme: {
@@ -6,7 +7,7 @@ module.exports = {
     colors: {
       primary: '#262626',
       secondary: '#4f4f4f',
-      three: '#1E2748',
+      three: '#FAD810',
       four: '#111629',
       five: '#17C3F9',
       dark: '#212121',
