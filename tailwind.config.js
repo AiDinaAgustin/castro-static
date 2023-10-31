@@ -20,5 +20,6 @@ module.exports = {
       nunito: ['Playfair Display', 'serif'],
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('flowbite/plugin'),
+  require("daisyui")],
 }
