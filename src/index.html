@@ -19,7 +19,7 @@
   </head>
   <body class="m-0 text-base antialiased leading-default bg-black font-mono">
     <nav
-      class="fixed top-0 z-50 w-full bg-black dark:bg-gray-800 dark:border-gray-700 font-raleway"
+      class="fixed overflow-x-hidden top-0 z-50 w-full bg-black dark:bg-gray-800 dark:border-gray-700 font-raleway"
     >
       <div class="lg:px-4 lg:pl-3">
         <div class="flex justify-between mx-2 mt-2">
@@ -50,7 +50,7 @@
                 <li class="mr-4" role="presentation">
                   <button
                     class="inline-block text-gray-300 p-4 border-b-2 rounded-t-lg"
-                    id="profile-tab"
+                    id="buatkamu-tab"
                     data-tabs-target="#profile"
                     type="button"
                     role="tab"
@@ -63,7 +63,7 @@
                 <li class="mr-4" role="presentation">
                   <button
                     class="inline-block p-4 text-gray-300 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-yellow-400"
-                    id="dashboard-tab"
+                    id="misteri-tab"
                     data-tabs-target="#dashboard"
                     type="button"
                     role="tab"
@@ -76,7 +76,7 @@
                 <li class="mr-4" role="presentation">
                   <button
                     class="inline-block p-4 text-gray-300 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                    id="settings-tab"
+                    id="thriler-tab"
                     data-tabs-target="#settings"
                     type="button"
                     role="tab"
@@ -89,7 +89,7 @@
                 <li role="presentation">
                   <button
                     class="inline-block p-4 text-gray-300 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                    id="contacts-tab"
+                    id="supernatural-tab"
                     data-tabs-target="#contacts"
                     type="button"
                     role="tab"
@@ -104,7 +104,7 @@
           </div>
 
           <div>
-            <button
+            <button type="submit"
               class="inline-block bg-yellow-300 font-medium text-primary px-4 py-2 rounded-lg"
             >
               MASUK
@@ -116,7 +116,7 @@
 
     <aside
       id="logo-sidebar"
-      class="fixed text-sm top-0 left-8 z-40 w-48 h-screen pt-24 transition-transform -translate-x-full bg-primary sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+      class="fixed overflow-x-hidden bg-black pl-6  text-sm top-0  z-40 w-48 h-screen pt-24 transition-transform -translate-x-full sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
       aria-label="Sidebar"
     >
       <div
@@ -126,12 +126,14 @@
           <li>
             <a
               href="#"
-              class="flex items-center p-2 bg-white text-secondary dark:text-white hover:bg-gray-700 dark:hover:bg-gray-700 group"
+              class="flex items-center p-2 bg-white hover:text-white text-secondary rounded-lg dark:text-white hover:bg-gray-700 dark:hover:bg-gray-700 group"
             >
               <div
-                class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center bg-white bg-center stroke-0 text-center xl:p-2.5"
+                class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center rounded-lg justify-center bg-white bg-center stroke-0 text-center xl:p-2.5"
               >
                 <svg
+                  class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 576 512"
@@ -300,15 +302,15 @@
     </aside>
 
     <!-- isi content -->
-    <div id="content">
-      <div class="p-4 sm:ml-64 pt-8">
+    <div id="content" class="">
+      <div class="p-4 sm:ml-64 pt-8 mt-12">
         <div class="p-4 mt-8">
-          <div id="default-tab-content" class="w-[1000px]">
+          <div id="default-tab-content" class="flex flex-nowrap">
             <div
-              class="hidden p-4 rounded-lg bg-black dark:bg-gray-800"
+              class="overflow-x-hidden hidden p-4 rounded-lg bg-black dark:bg-gray-800"
               id="profile"
               role="tabpanel"
-              aria-labelledby="profile-tab"
+              aria-labelledby="buatkamu-tab"
             >
               <div
                 id="default-carousel"
@@ -469,7 +471,7 @@
               </div>
 
               <div>
-                <p class="text-white py-4 font-bold text-2xl">
+                <p class="text-white py-4 font-bold text-xl">
                   Direkomendasikan untukmu
                 </p>
               </div>
@@ -488,20 +490,20 @@
                       alt=""
                     />
                   </a>
-                  <div class="p-5">
+                  <div class=" mr-auto pt-2">
                     <a href="#">
                       <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white"
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
                       >
                         Misteri Pantai Selatan
                       </h5>
                     </a>
                     <p
-                      class="mb-2 font-medium text-gray-300 dark:text-gray-400"
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
                     >
                       Lorem ipsum dolor sit amet consectetur
                     </p>
-                    <p class="text-gray-500 font-light">22 Menit lalu</p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
                   </div>
                 </div>
 
@@ -516,20 +518,20 @@
                       alt=""
                     />
                   </a>
-                  <div class="p-5">
+                  <div class=" mr-auto pt-2">
                     <a href="#">
                       <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white"
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
                       >
                         Misteri Pantai Selatan
                       </h5>
                     </a>
                     <p
-                      class="mb-2 font-medium text-gray-300 dark:text-gray-400"
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
                     >
                       Lorem ipsum dolor sit amet consectetur
                     </p>
-                    <p class="text-gray-500 font-light">22 Menit lalu</p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
                   </div>
                 </div>
 
@@ -544,20 +546,20 @@
                       alt=""
                     />
                   </a>
-                  <div class="p-5">
+                  <div class=" mr-auto pt-2">
                     <a href="#">
                       <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white"
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
                       >
                         Misteri Pantai Selatan
                       </h5>
                     </a>
                     <p
-                      class="mb-2 font-medium text-gray-300 dark:text-gray-400"
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
                     >
                       Lorem ipsum dolor sit amet consectetur
                     </p>
-                    <p class="text-gray-500 font-light">22 Menit lalu</p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
                   </div>
                 </div>
 
@@ -572,25 +574,25 @@
                       alt=""
                     />
                   </a>
-                  <div class="p-5">
+                  <div class=" mr-auto pt-2">
                     <a href="#">
                       <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white"
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
                       >
                         Misteri Pantai Selatan
                       </h5>
                     </a>
                     <p
-                      class="mb-2 font-medium text-gray-300 dark:text-gray-400"
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
                     >
                       Lorem ipsum dolor sit amet consectetur
                     </p>
-                    <p class="text-gray-500 font-light">22 Menit lalu</p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
                   </div>
                 </div>
-  
-              </div>
-              <div
+
+                <!-- card5 -->
+                <div
                   class="max-w-xs bg-black rounded-lg shadow hover:bg-gray-800 dark:bg-gray-800 dark:border-gray-700"
                 >
                   <a href="#">
@@ -600,64 +602,57 @@
                       alt=""
                     />
                   </a>
-                  <div class="p-5">
+                  <div class=" mr-auto pt-2">
                     <a href="#">
                       <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white"
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
                       >
                         Misteri Pantai Selatan
                       </h5>
                     </a>
                     <p
-                      class="mb-2 font-medium text-gray-300 dark:text-gray-400"
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
                     >
                       Lorem ipsum dolor sit amet consectetur
                     </p>
-                    <p class="text-gray-500 font-light">22 Menit lalu</p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
                   </div>
                 </div>
 
-              <!-- pagination -->
-              <div aria-label="Page navigation example" class="">
-                <ul class="flex -space-x-px h-8 text-sm justify-center mx-auto">
-                  <li>
-                    <a href="#" class="flex items-center justify-center px-3 h-8 ml-0 leading-tight text-white bg-black border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                      <span class="sr-only">Previous</span>
-                      <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                      </svg>
+                <!-- card6 -->
+                <div
+                  class="max-w-xs bg-black rounded-lg shadow hover:bg-gray-800 dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg"
+                      src="/build/assets/img/castro4.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class=" mr-auto pt-2">
+                    <a href="#">
+                      <h5
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Misteri Pantai Selatan
+                      </h5>
                     </a>
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-white bg-black border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-white bg-black border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-white bg-black border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">3</a>
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-white bg-black border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-white bg-black border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-white bg-black border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                      <span class="sr-only">Next</span>
-                      <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+                    <p
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
+                    >
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
+                  </div>
+                </div>
               </div>
+
 
               
               <!-- top episode -->
               <div>
-                <p class="text-white py-4 font-bold text-2xl">Top Episode</p>
+                <p class="text-white py-4 font-bold text-xl pt-8">Top Episode</p>
               </div>
 
               <!-- card top episode 1 -->
@@ -666,21 +661,21 @@
                 <div>
                   <a
                     href="#"
-                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
                   >
                     <img
-                      class="object-cover w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-l-xl"
+                      class="h-12 max-w-xs"
                       src="/build/assets/img/castro2.png"
                       alt=""
                     />
                     <div class="flex flex-col justify-between p-4 leading-normal">
                       <h5
-                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
                       >
                         Harta yang Paling Berharga adalah Keluarga
                       </h5>
                       <p
-                        class="mb-3 font-normal text-gray-400 dark:text-gray-400"
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
                       >
                         Ini Keluarga ku
                       </p>
@@ -692,21 +687,21 @@
                 <div>
                   <a
                     href="#"
-                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
                   >
                     <img
-                      class="object-cover w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-l-xl"
+                      class="h-12 max-w-xs"
                       src="/build/assets/img/castro2.png"
                       alt=""
                     />
                     <div class="flex flex-col justify-between p-4 leading-normal">
                       <h5
-                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
                       >
                         Harta yang Paling Berharga adalah Keluarga
                       </h5>
                       <p
-                        class="mb-3 font-normal text-gray-400 dark:text-gray-400"
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
                       >
                         Ini Keluarga ku
                       </p>
@@ -715,59 +710,449 @@
                 </div>
 
 
-                <!-- card3 -->
                 <div>
                   <a
                     href="#"
-                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
                   >
                     <img
-                      class="object-cover w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-l-xl"
+                      class="h-12 max-w-xs"
                       src="/build/assets/img/castro2.png"
                       alt=""
                     />
                     <div class="flex flex-col justify-between p-4 leading-normal">
                       <h5
-                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
                       >
                         Harta yang Paling Berharga adalah Keluarga
                       </h5>
                       <p
-                        class="mb-3 font-normal text-gray-400 dark:text-gray-400"
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
                       >
                         Ini Keluarga ku
                       </p>
                     </div>
                   </a>
+                </div>
+
+                <div>
+                  <a
+                    href="#"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  >
+                    <img
+                      class="h-12 max-w-xs"
+                      src="/build/assets/img/castro2.png"
+                      alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Harta yang Paling Berharga adalah Keluarga
+                      </h5>
+                      <p
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
+                      >
+                        Ini Keluarga ku
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- card5 -->
+                <div>
+                  <a
+                    href="#"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  >
+                    <img
+                      class="h-12 max-w-xs"
+                      src="/build/assets/img/castro2.png"
+                      alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Harta yang Paling Berharga adalah Keluarga
+                      </h5>
+                      <p
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
+                      >
+                        Ini Keluarga ku
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- card6 -->
+                <div>
+                  <a
+                    href="#"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  >
+                    <img
+                      class="h-12 max-w-xs"
+                      src="/build/assets/img/castro2.png"
+                      alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Harta yang Paling Berharga adalah Keluarga
+                      </h5>
+                      <p
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
+                      >
+                        Ini Keluarga ku
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- episode terbaru -->
+              <div>
+                <p class="text-white py-4 font-bold text-xl pt-4">
+                  Episode Baru
+                </p>
+              </div>
+              <div class="flex flex-nowrap grid-cols-4 gap-4">
+                <!-- card1 -->
+                <div
+                  class="max-w-xs bg-black rounded-lg shadow hover:bg-gray-800 dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg"
+                      src="/build/assets/img/castro4.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class=" mr-auto pt-2">
+                    <a href="#">
+                      <h5
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Misteri Pantai Selatan
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
+                    >
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
+                  </div>
+                </div>
+
+                <!-- card2 -->
+                <div
+                  class="max-w-xs bg-black rounded-lg shadow hover:bg-gray-800 dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg"
+                      src="/build/assets/img/castro4.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class=" mr-auto pt-2">
+                    <a href="#">
+                      <h5
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Misteri Pantai Selatan
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
+                    >
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
+                  </div>
+                </div>
+
+                <!-- card3 -->
+                <div
+                  class="max-w-xs bg-black rounded-lg shadow hover:bg-gray-800 dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg"
+                      src="/build/assets/img/castro4.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class=" mr-auto pt-2">
+                    <a href="#">
+                      <h5
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Misteri Pantai Selatan
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
+                    >
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
+                  </div>
                 </div>
 
                 <!-- card4 -->
+                <div
+                  class="max-w-xs bg-black rounded-lg shadow hover:bg-gray-800 dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg"
+                      src="/build/assets/img/castro4.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class=" mr-auto pt-2">
+                    <a href="#">
+                      <h5
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Misteri Pantai Selatan
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
+                    >
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
+                  </div>
+                </div>
+
+                <!-- card5 -->
+                <div
+                  class="max-w-xs bg-black rounded-lg shadow hover:bg-gray-800 dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg"
+                      src="/build/assets/img/castro4.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class=" mr-auto pt-2">
+                    <a href="#">
+                      <h5
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Misteri Pantai Selatan
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
+                    >
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
+                  </div>
+                </div>
+
+                <!-- card6 -->
+                <div
+                  class="max-w-xs bg-black rounded-lg shadow hover:bg-gray-800 dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg"
+                      src="/build/assets/img/castro4.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class=" mr-auto pt-2">
+                    <a href="#">
+                      <h5
+                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Misteri Pantai Selatan
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-2 font-medium text-xs text-gray-400 dark:text-gray-400"
+                    >
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                    <p class="text-gray-500 text-xs font-light">22 Menit lalu</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- top podcast -->
+              <div>
+                <p class="text-white py-4 font-bold text-xl pt-8">Top Podcast Horror</p>
+              </div>
+
+              <!-- card top episode 1 -->
+              <div class="flex flex-nowrap grid-cols-4 gap-4">
+                <!-- card1 -->
                 <div>
                   <a
                     href="#"
-                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
                   >
                     <img
-                      class="object-cover w-full rounded-t-lg h-60 md:h-auto md:w-48 md:rounded-none md:rounded-l-xl"
+                      class="h-12 max-w-xs"
                       src="/build/assets/img/castro2.png"
                       alt=""
                     />
                     <div class="flex flex-col justify-between p-4 leading-normal">
                       <h5
-                        class="mb-2 text-lg font-bold tracking-tight text-white dark:text-white"
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
                       >
                         Harta yang Paling Berharga adalah Keluarga
                       </h5>
                       <p
-                        class="mb-3 font-normal text-gray-400 dark:text-gray-400"
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
                       >
                         Ini Keluarga ku
                       </p>
                     </div>
                   </a>
                 </div>
-              </div>
 
+                <!-- card2 -->
+                <div>
+                  <a
+                    href="#"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  >
+                    <img
+                      class="h-12 max-w-xs"
+                      src="/build/assets/img/castro2.png"
+                      alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Harta yang Paling Berharga adalah Keluarga
+                      </h5>
+                      <p
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
+                      >
+                        Ini Keluarga ku
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+
+                <div>
+                  <a
+                    href="#"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  >
+                    <img
+                      class="h-12 max-w-xs"
+                      src="/build/assets/img/castro2.png"
+                      alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Harta yang Paling Berharga adalah Keluarga
+                      </h5>
+                      <p
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
+                      >
+                        Ini Keluarga ku
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="#"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  >
+                    <img
+                      class="h-12 max-w-xs"
+                      src="/build/assets/img/castro2.png"
+                      alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Harta yang Paling Berharga adalah Keluarga
+                      </h5>
+                      <p
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
+                      >
+                        Ini Keluarga ku
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- card5 -->
+                <div>
+                  <a
+                    href="#"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  >
+                    <img
+                      class="h-12 max-w-xs"
+                      src="/build/assets/img/castro2.png"
+                      alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Harta yang Paling Berharga adalah Keluarga
+                      </h5>
+                      <p
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
+                      >
+                        Ini Keluarga ku
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- card6 -->
+                <div>
+                  <a
+                    href="#"
+                    class="flex flex-col items-center bg-black border-black rounded-lg shadow md:flex-row w-64 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  >
+                    <img
+                      class="h-12 max-w-xs"
+                      src="/build/assets/img/castro2.png"
+                      alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5
+                        class="mb-2 text-sm font-bold tracking-tight text-white dark:text-white"
+                      >
+                        Harta yang Paling Berharga adalah Keluarga
+                      </h5>
+                      <p
+                        class="mb-3 text-xs text-gray-400 dark:text-gray-400"
+                      >
+                        Ini Keluarga ku
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
 
               <p class="text-sm text-gray-500 dark:text-gray-400">
                 This is some placeholder content the
@@ -782,7 +1167,7 @@
               class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
               id="dashboard"
               role="tabpanel"
-              aria-labelledby="dashboard-tab"
+              aria-labelledby="misteri-tab"
             >
               <p class="text-sm text-gray-500 dark:text-gray-400">
                 This is some placeholder content the
@@ -797,7 +1182,7 @@
               class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
               id="settings"
               role="tabpanel"
-              aria-labelledby="settings-tab"
+              aria-labelledby="thriler-tab"
             >
               <p class="text-sm text-gray-500 dark:text-gray-400">
                 This is some placeholder content the
@@ -812,7 +1197,7 @@
               class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
               id="contacts"
               role="tabpanel"
-              aria-labelledby="contacts-tab"
+              aria-labelledby="supernatural-tab"
             >
               <p class="text-sm text-gray-500 dark:text-gray-400">
                 This is some placeholder content the
